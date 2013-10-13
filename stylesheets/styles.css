@@ -823,8 +823,7 @@ section #title .credits.right {
   float: right;
 }
 section #map {
-  width:980px;
-  margin:250px 150px; padding-top:50px;
+  margin:50px 50px 50px 50px; padding-top:50px;
 }
 
 @media print, screen and (max-width: 720px) {
