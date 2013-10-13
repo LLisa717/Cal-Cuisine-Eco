@@ -781,9 +781,7 @@ dt {
   font-size: 11px;
 }
 */
-#map {
-  margin:100px 43px; padding-top:115px;
-}
+
 
 section {
   max-width: 650px;
@@ -823,6 +821,9 @@ section #title .credits.left {
 }
 section #title .credits.right {
   float: right;
+}
+section #map {
+  margin:100px 43px; padding-top:115px;
 }
 
 @media print, screen and (max-width: 720px) {
