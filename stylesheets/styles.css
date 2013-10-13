@@ -780,9 +780,7 @@ dt {
   font-size: 11px;
 }
 #map {
-  width:950px;
-  margin:0px auto 300px auto;
-  padding-bottom:100px;
+  margin:0px 43px; padding-top:115px;
 }
 
 section {
