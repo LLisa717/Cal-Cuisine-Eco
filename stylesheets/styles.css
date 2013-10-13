@@ -752,6 +752,7 @@ dt {
   display: inline-block;
   text-align: center;
 }
+/*
 #header nav li a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
@@ -779,6 +780,7 @@ dt {
   margin-right: 10px;
   font-size: 11px;
 }
+*/
 #map {
   margin:100px 43px; padding-top:115px;
 }
