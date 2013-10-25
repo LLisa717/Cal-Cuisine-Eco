@@ -11,6 +11,8 @@ div #container {
 }
 
 #mapbox {
+	padding: 40px 15px;
+  	text-align: center;
 	height: 150px;
 	width: 150px;
 }
