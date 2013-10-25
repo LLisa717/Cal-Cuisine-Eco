@@ -1,0 +1,16 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+div #container {
+  width: 100%;
+}
+
+#mapbox {
+	height: 150px;
+	width: 150px;
+}
