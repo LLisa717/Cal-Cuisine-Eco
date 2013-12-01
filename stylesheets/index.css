@@ -1,5 +1,6 @@
 body {
   padding-top: 50px;
+  padding-bottom: 40px;
 }
 .starter-template {
   padding: 40px 15px;
@@ -8,6 +9,7 @@ body {
 
 div #container {
   width: 100%;
+  padding-bottom: 50px;
 }
 
 #mapbox {
@@ -15,4 +17,5 @@ div #container {
   	text-align: center;
 	height: 150px;
 	width: 150px;
+	padding-bottom: 50px;
 }
