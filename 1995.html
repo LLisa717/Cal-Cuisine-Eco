@@ -17,17 +17,6 @@
     <Script src='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></Script>
     <title> California Cuisine Ecosystem</title>
     <Style>
-      #onscreen {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          width: 300px;
-          height: 100px;
-          background: #fff;
-          z-index: 100;
-          overflow-y: scroll;
-      }
-
       #map {
         width:980px;
         height:980px;
@@ -49,7 +38,7 @@
             <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">#</a></li>
-              <li><a href="./1995.html">1995</a></li>
+              <li><a href="./index.html">1986</a></li>
               <li><a href="./Current.html">Current</a></li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -64,10 +53,9 @@
 	        <p class="lead">A data visualization project for Open Innovation program at Haas School of Business, UC-Berkeley</p>
 	    </div>
 		  <div id='map' class='dark'></div>
-      <pre id='onscreen'></pre>
         <Script type='text/javascript'>
         var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
-            .setView([37.89, -122.26], 12);
+            .setView([37.879, -122.26], 10);
             /**
 //Loading CSV files into the map
         $.ajax({
@@ -116,8 +104,20 @@
         }
         ).addTo(map);
 **/
-
         var geoJson = [
+            
+            {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.27096557617188, 37.87675039049738]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#0099ff'
+                }
+            },
             {
                 type: 'Feature',
                 geometry: {
@@ -170,7 +170,7 @@
                 type: 'Feature',
                 geometry: {
                     type: 'Point',
-                    coordinates: [-122.2584342956543,37.867671462486946]
+                    coordinates: [-122.28538513183594,37.89788505153618]
                 },
                 properties: {
                     title: 'Marker Two',
@@ -182,12 +182,160 @@
                 type: 'Feature',
                 geometry: {
                     type: 'Point',
-                    coordinates: [-122.27663040161133, 37.869297621392384]
+                    coordinates: [-122.2584342956543,37.89436302930203]
                 },
                 properties: {
                     title: 'Marker Two',
                     description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
                     'marker-color': '#0099ff'
+                }
+            },{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.3492431640625,37.95326699078189]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#0099ff'
+                }
+            },{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.41447448730469,37.79242240798857]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#0099ff'
+                }
+            },{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.40211486816406,37.76637243960177]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#0099ff'
+                }
+            },{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.11097717285156,37.617766798676605]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#0099ff'
+                }
+            },{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.3931884765625,37.49719711617554]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#0099ff'
+                }
+            },{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-121.94686889648438,37.36524573787728]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#0099ff'
+                }
+            },{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-120.2838134765625,34.694202959295495]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#0099ff'
+                }
+            },{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-120.2838134765625,34.694202959295495]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#E87B1C'
+                }
+            },
+            {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-121.67633056640625,37.94203148678866]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#E87B1C'
+                }
+            },
+            {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.1185302734375,38.089174937729794]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#E87B1C'
+                }
+            },
+            {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.04986572265625,37.90736658145495]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#E87B1C'
+                }
+            },
+            {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.28057861328125, 37.85208561975297]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#E87B1C'
+                }
+            }
+            {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-122.28057861328125, 37.85208561975297]
+                },
+                properties: {
+                    title: 'Marker Two',
+                    description: 'Another marker, including <a href="http://mapbox.com">a link</a>.',
+                    'marker-color': '#E87B1C'
                 }
             },
             {
