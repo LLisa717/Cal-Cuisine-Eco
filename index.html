@@ -57,7 +57,15 @@
         <Script type='text/javascript'>
         var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
             .setView([37.8, -122.26], 12);
-
+//Loading CSV files into the map
+        $.ajax({
+            // you will need to replace this URL with the URL to your CSV file.
+            url: '/mapbox.js/assets/airports.csv',
+            success: function csvLoad(csv) {
+                markerLayer.setGeoJSON(csv2geojson.csv2geojson(csv));
+            }
+        });
+/**
         L.mapbox.markerLayer({
             // this feature is in the GeoJSON format: see geojson.org
             // for the full specification
@@ -77,6 +85,7 @@
                 'marker-color': '#f0a'
             }
         }).addTo(map);
+      **/
 
         </Script>
 		  </div>
