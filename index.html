@@ -17,6 +17,7 @@
     <Script src='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></Script>
     <title> California Cuisine Ecosystem</title>
     <Style>
+    /*
       #onscreen {
           position: absolute;
           top: 10px;
@@ -27,10 +28,11 @@
           z-index: 100;
           overflow-y: scroll;
       }
+      */
 
       #map {
         width:980px;
-        height:980px;
+        height:500px;
         padding: 40px 15px;
         text-align: center;
       }
@@ -64,7 +66,7 @@
 	        <p class="lead">A data visualization project for Open Innovation program at Haas School of Business, UC-Berkeley</p>
 	    </div>
 		  <div id='map' class='dark'></div>
-      <pre id='onscreen'></pre>
+      //<pre id='onscreen'></pre>
         <Script type='text/javascript'>
         var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
             .setView([37.879611, -122.269101], 12);
